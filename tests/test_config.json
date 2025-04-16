@@ -1,0 +1,22 @@
+[
+  {
+    "function": "load_transactions_data",
+    "args": ["spark", "data/input.csv"],
+    "expected": "DataFrame"
+  },
+  {
+    "function": "flag_large_transactions",
+    "args": ["df"],
+    "expected": "DataFrame"
+  },
+  {
+    "function": "detect_location_mismatch",
+    "args": ["df"],
+    "expected": "DataFrame"
+  },
+   {
+    "function": "summarize_fraud_flags",
+    "args": ["df"],
+    "expected": "DataFrame"
+  }
+]
